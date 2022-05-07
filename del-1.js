@@ -3,6 +3,13 @@
  * Enable fullscreen view for Flickity
  */
 
+
+
+
+
+
+
+
 /*jshint browser: true, undef: true, unused: true, strict: true*/
 
 ( function( window, factory ) {
