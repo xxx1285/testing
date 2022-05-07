@@ -1,11 +1,13 @@
-const answers = [];
+'use strict';
+const numberofFilms = promt('Ckolko filmov posmotrel?', '22');
 
-answers[0] = +prompt('Как дела?', '15');
+const personalMovieDB = {
+   count: "",
+   movies: "",
+   actors: "",
+   genres: "",
+   privat: ""
+};
 
-console.log(9%2);
-
-
-console.log(18%2);
-console.log(123344%2);
-console.log(9%22222);
+console.log(numberofFilms);
 
