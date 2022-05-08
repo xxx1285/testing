@@ -1,23 +1,72 @@
-'use strict';
-const numberofFilms = +prompt('Сколько фильмов вы уже посмотрели?', '22');
+"use strict";
+
+// if (4 == 8) {
+//    console.log('Ok');
+// } else {
+//    console.log('Error');
+// }
+
+
+// (net == 50) ? console.log("Ok") : console.log("Errof");
+// if (net < 52) {
+//    console.log("Good");
+
+// } else if (net > 55) {
+//    console.log('Normall');
+// } 
+// else {console.log("Bad");
+// }
+
+// (net == 52) ? console.log('ok') : console.log('No'); 
+// switch (num) {
+//    case 50: console.log('YES');
+//    break;
+//    case 55: console.log('Mayby');
+//    break;
+//    default: console.log('Default');
+//       break;
+// };
+
+
+
+// while (qwerty <= 55) {
+//    console.log(`okey ${qwerty}`);
+//    qwerty++;
+// }
+
+
+// do {
+//    console.log(`okey ${qwerty}`);
+//    qwerty++;
+// }
+// while (qwerty <= 55);
+
+// let qwerty = 50;
+
+// for (let i = 3; i < 8; i++) {
+//    if (i == 6) { continue;};
+//    console.log(`okey ${i}`);
+//    qwerty++;
+// }
+let numberOfFilms = +prompt(`Skolko smotrel filmov?`, ``)
 
 const personalMovieDB = {
-   count: numberofFilms,
+   count: numberOfFilms,
    movies: {},
-   actors: {},
-   genres: [],
    privat: false
 };
-let movies = {};
 
-let a = prompt("Один из последних просмотренных фильмов?", ""),
-    b = prompt("На сколько оцените его?", ""),
-    c = prompt("Один из последних просмотренных фильмов?", ""),
-    d2 = prompt("На сколько оцените его?", "");
-
-personalMovieDB.movies.a = b;
-personalMovieDB.movies.c = d2;
-
-
-console.log(personalMovieDB);
-
+for (let i = 0; i < 2; i++) {
+   let a = prompt(`Питання 1 захodi ${i}`, ``),
+       b = prompt(`2 HELP ${i}`, ``);
+   let c = 111;
+   if (a != null && b != null && a != '' && b != '') {
+      personalMovieDB.movies[a] = b;
+      console.log('done');
+   } else {
+      console.log('error');
+      i--;
+   };
+   
+   console.log(personalMovieDB);
+};
