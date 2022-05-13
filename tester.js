@@ -57,19 +57,20 @@ const personalMovieDB = {
    privat: true
 };
 
-// for (let i = 0; i < 2; i++) {
-//    let a = prompt(`Питання 1 захodi ${i}`, ``),
-//        b = prompt(`2 HELP ${i}`, ``);
-//    let c = 111;
-//    if (a != null && b != null && a != '' && b != '') {
-//       personalMovieDB.movies[a] = b;
-//       console.log('done');
-//    } else {
-//       console.log('error');
-//       i--;
-//    };
-   
-// };
+function rememberMyFilms() {
+   for (let i = 0; i < 2; i++) {
+      let a = prompt(`Питання 1 захodi ${i}`, ``),
+         b = prompt(`2 HELP ${i}`, ``);
+      let c = 111;
+      if (a != null && b != null && a != '' && b != '') {
+         personalMovieDB.movies[a] = b;
+         console.log('done');
+      } else {
+         console.log('error');
+         i--;
+      };
+   }
+}
 
 function showMyDB (hidden) {
    if (!hidden) {

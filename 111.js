@@ -48,11 +48,16 @@
 
 
 
-const arr = [1, 2, 22, 3, 4];
+const arr = [1, 2, 22, 222, 22, 4];
+arr.sort(comNums);
+console.log(arr);
 
-arr.forEach(function(wwq, rrre, arr) {
-   console.log(`${wwq}: ${rrre} внутри ${arr}`)
-});
+function comNums (a, b) {
+   return a - b;
+}
+// arr.forEach(function(wwq, rrre, arr) {
+//    console.log(`${wwq}: ${rrre} внутри ${arr}`)
+// });
 // for (i = 0; i < arr.length; i++) {
 //    console.log (arr[i]);
 // }
@@ -60,3 +65,17 @@ arr.forEach(function(wwq, rrre, arr) {
 // for (let uuu of arr) {
 //    console.log (uuu);
 // }
+
+const add = {
+   a: 32,
+   v: 443
+};
+const sas = {
+   f: 23,
+   fd: 'Fantik'
+};
+const clon = Object.assign({}, sas);
+clon.f = 55;
+
+console.log(sas);
+console.log(clon);
