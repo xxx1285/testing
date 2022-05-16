@@ -51,8 +51,33 @@ const personalMovieDB = {
       }
    },
    writeYouGenres: function() {
-      for (let i = 1; i <= 3; i++) {
-         personalMovieDB.genres[i - 1] = prompt(`You faworite shanr in cinema ${i}`);
+      for (let i = 1; i <= 5; i++) {
+         let genre = prompt(`You faworite shanr in cinema ${i}`).toLowerCase();
+
+         if (genre === '' || genre == null) {
+            console.log('ERROR - Are you not vveli bukvu?');
+            i--;
+         } else {
+            personalMovieDB.genres[i - 1] = genre;
+         } 
       }
+      personalMovieDB.genres.forEach((item, i) => {
+         console.log(`Любимий жанр ${i + 1} - это ${item}`)
+      })
    }
 };
+
+// console.log(typeof(String(4)));
+
+// console.log(typeof(5 + ''));
+
+// console.log(typeof(+'4'));
+
+// let rrrrMas = ['aaa', 3, 'eee'];
+// let ttttMas = [555, 'ffff', 4567];
+// let zzzMas = [...rrrrMas, ...ttttMas];
+// console.log(2 && 1 && null && 0 && undefined);
+console.log('Алек' > 'нь');
+// let x = 5; alert( x++ ); 
+// // console.log(parseInt('12px', 3));
+// 2 && 1 && null && 0 && undefined ?
