@@ -3,7 +3,21 @@ for (var link of document.querySelectorAll(`[class*="item_"] > a, [class*="item_
    allLinks.push({'title': link.text, 'href': new URL (link.getAttribute('href'), 'https://www332').href });
 }
 
-textContent
+// textContent
+
+
+window.addEventListener('DOMContentLoaded', () => {
+   const body = document.querySelector(`[class*="item_"] > a`);
+   body.childNodes.forEach(node => {
+      console.log(node);
+   });
+});
+
+
+//----------------------------------------------------------------------
+// document.querySelectorAll(`[class*="item_"] span > span:first-child`)
+// document.querySelectorAll(`[class*="item_"] span > span:nth-child(2)`)
+//------------------------------------------------------------------------
 
 // for (var link of document.querySelectorAll(`[class*="item_"] > a`)) {
 //    allLinks.push({'title': link.text});
