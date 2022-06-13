@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 var allLinks = [];
 for (var link of document.querySelectorAll(`[class*="item_"] > a, [class*="item_"] span:first-child`)) {
    allLinks.push({'title': link.text, 'href': new URL (link.getAttribute('href'), 'https://www332').href });
